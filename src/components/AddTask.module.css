@@ -1,0 +1,39 @@
+.addTaskWrapper {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+  top: -1.70rem;
+  width: 100%;
+  
+}
+
+.inputAddTask {
+  background: var(--gray-500);
+
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+
+}
+
+.buttonAddTask {
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+
+  font-size: 0.875rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  transition: background 0.2s;
+}
+
+.buttonAddTask:hover {
+  background: var(--blue);
+}
