@@ -1,0 +1,71 @@
+.taskListWrapper {
+  background: var(--gray-500);
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+  display: flex;
+}
+
+.taskDescriptionWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 0.75rem;
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  input[type='checkbox'],
+  input[type='radio'] {
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+
+    padding: 7px;
+  }
+}
+
+.taskDescriptionWrapper input[type='checkbox'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.taskDescriptionWrapper input::before {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  background: transparent;
+  border: 2px solid var(--blue-dark);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+
+.taskDescriptionWrapper input:checked::before {
+  background: var(--blue);
+  padding: 20px;
+}
+
+.taskDescription {
+  font-size: 0.875rem;
+  color: var(--gray-100);
+}
+
+.deleteTask {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  color: var(--gray-300);
+
+  display: flex;
+}
+
+.deleteTask:hover {
+  color: var(--danger);
+}

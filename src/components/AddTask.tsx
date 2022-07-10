@@ -1,6 +1,6 @@
-import styles from './AddTask.module.css'
+import styles from './AddTask.module.css';
 
-import { PlusCircle } from 'phosphor-react'
+import { PlusCircle } from 'phosphor-react';
 
 export function AddTask() {
   return (
@@ -8,11 +8,11 @@ export function AddTask() {
       <input
         className={styles.inputAddTask}
         type="text"
-        placeholder="Adicione uma nova tarefa"
+        placeholder="Adicione uma nova tafera"
       />
       <button className={styles.buttonAddTask}>
         Criar <PlusCircle size={20} />
       </button>
     </div>
-  )
+  );
 }

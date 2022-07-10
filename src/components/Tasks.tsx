@@ -1,6 +1,7 @@
-import styles from './Tasks.module.css'
+import { TaskList } from './TaskList';
+import styles from './Tasks.module.css';
 
-import clipBoard from '../assets/clipboard.svg'
+import clipBoard from '../assets/clipboard.svg';
 
 export function Tasks() {
   return (
@@ -16,6 +17,7 @@ export function Tasks() {
         </strong>
       </div>
       <div className={styles.containerTasks}>
+        <TaskList />
         <div className={styles.noTasks}>
           <img src={clipBoard} alt="prancheta" />
           <strong>Você ainda não tem tarefas cadastradas</strong>
@@ -23,5 +25,5 @@ export function Tasks() {
         </div>
       </div>
     </>
-  )
+  );
 }

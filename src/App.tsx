@@ -1,8 +1,7 @@
-import { useState } from 'react'
-import styles from './App.module.css'
-import { AddTask } from './components/AddTask'
-import { Header } from './components/Header'
-import { Tasks } from './components/Tasks'
+import styles from './App.module.css';
+import { AddTask } from './components/AddTask';
+import { Header } from './components/Header';
+import { Tasks } from './components/Tasks';
 
 function App() {
   return (
@@ -13,7 +12,7 @@ function App() {
         <Tasks />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
